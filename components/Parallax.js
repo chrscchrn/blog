@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         border: "0",
         display: "flex",
         alignItems: "center",
-        height: "40vw",
+        height: "45vw",
         width: "100%",
     },
 });
