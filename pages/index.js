@@ -1,19 +1,23 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Parallax from '../components/Parallax'
+
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 export default function Home() {
   return (
     <>
-    <div className={styles.container}>
+      <CssBaseline/>
       <Head>
         <title>Blogify</title>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Words
-        </h1>
-
+        <Parallax image={"../assets/img/mount.jpg"} >
+          {/* grid container and item, some titles n shit */}
+        </Parallax>
+        <div>
+          <h1>
+            Words
+          </h1>
           <p>
             post: <br/>
           date, author, subtitle, body, pictures, on the top there can be a back component
@@ -29,20 +33,18 @@ export default function Home() {
             <hr/>
             My personal links
           </p>
-        
-      </main>
+        </div>
 
-      <footer className={styles.footer}>
+
+      <footer>
         <a
           href="https://portfolio-cnc.herokuapp.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Christopher Cochran{' '}
-          {/* <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /> */}
         </a>
       </footer>
-    </div>
     </>
   )
 }
